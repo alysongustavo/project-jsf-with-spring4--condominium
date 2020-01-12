@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+<head>
+    <title>Tipos de Documento</title>
+</head>
+<body>
+<h1>Tipos de Documentos</h1><br/>
+<h:form id="form">
+    <p:dataGrid var="typedoc" value="#{typeDocumentationController.allTypeDocumentation}" columns="2" layout="grid"
+                rows="12" paginator="true" id="typedoc"
+                paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                rowsPerPageTemplate="6,12,16">
+
+        <f:facet name="header">
+            Tipos de Documento
+        </f:facet>
+
+        <p:panel header="#{typedoc.id}" style="text-align:center">
+            <h:panelGrid columns="1" style="width:100%">
+                <h:outputText value="#{typedoc.name}" />
+            </h:panelGrid>
+        </p:panel>
+
+    </p:dataGrid>
+</h:form>
+
+
+</body>
+</html>

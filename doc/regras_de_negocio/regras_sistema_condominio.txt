@@ -1,0 +1,34 @@
+RN001 - Cadastrar Pessoa
+	* O USUÁRIO só pode ter um único cadastrado no sistema, ou seja, não existe uma pessoa com o mesmo CPF cadastrado mais de uma vez no sistema;
+	* O USUÁRIO cadastrado na plataforma deve ter maior de 18 anos;
+
+RN002 - Cadastrar Tipo de Documento
+    * Os tipos de documentos válidos no sistema são: RG, CPF, Titulo Eleitoral, Carteira de Motorista;
+	
+RN003 - Cadastrar Documento
+    * Os documentos cadastrados no sistema válido são os especificados na RN002;
+	* O USUÁRIO pode ter mais que um documento cadastrado no sistema, com tudo que seja de tipos diferente;
+	
+RN004 - Acesso ao Sistema
+    * Para ter acesso ao sistema o USUÁRIO deve ter o cadastrado no sistema válido e ativo;
+	* Para acesso ao sistema o USUÁRIO informa seu username e senha para sua autenticação;
+	* O USUÁRIO pode ter seu acesso bloqueado ao sistema pelo sindico do condóminiominio por algum motivo;
+	* A senha de acesso deve ter no minimo 6 digitos e no máximo 20 contendo, números, letras maiusculas e minusculas;
+	
+RN005 - Autorização de acesso a funcionalidade
+    * Para ter acesso a funcionalidade especifica do sistema, o usuário deve conter o perfil que tenha permissão de acesso a funcionalidade;
+    * Para revogar o acesso de um perfil a funcionalidade, o usuário administrador deve desassociar o perfil da funcionalidade;
+	* Para revogar o acesso de um usuário a alguma funcionalidade, o usuário deve ser removido do perfil de acesso a funcionalidade;
+	
+RN006 - Perfil do Sistema
+    * Os perfis do sistema são: Administrador, Sindico, Morador, Proprietário;
+	* O perfil de Administrador tem acesso inrestrito a todas funcionalidades do sistema;
+	* O perfil de Síndico tem acesso as funcionalidades atribuidas ao perfil de Síndico no sistema;
+	* O perfil de Morador tem acesso as funcionalidades atribuidas ao perfil de Morador no sistema;
+	* O perfil de Proprietário tem acesso as funcionalidades atribuidas ao perfil de Proprietário no sistema;
+	* As funcionalidades atribuida ao Administrador são: Todas;
+	* As funcionalidades atribuida ao Síndico são: Manter Pagamentos, Envio de Notificação, Manter Lançamentos, Manter Receitas, Emitir Boleto,
+	Processar Movimento Bancário no Sistema;
+	* As funcionalidades atribuida ao Morador são: Emitir Boleto, Emitir Notificação, Ler Notificação, Acompanhar Situação financeira de sua moradia;
+	* As funcionalidades atribuida ao Proprietário são: Emitir Boleto, Emitir Notificação, Ler Notificação, Acompanhar Situação financeira de sua propriedade;
+	
